@@ -58,6 +58,15 @@ base64 -d message.base64 > message.enc: Decodes the file in base64 format!
 
 openssl pkeyutl -decrypt -inkey keyforjohn.key -in message.enc -out message.txt: Basically the full decrypting!
 
+==================================================================================
 
+Assymetric Cryptography uses a public key and a private key.
 
+public key is widely distributed and used to encrypt messages.
+
+also ensures confidentiality.
+
+Private key can be decrypted by anyone with a public.key
+
+Asymmetric cryptography is more computationally intensive.
 
