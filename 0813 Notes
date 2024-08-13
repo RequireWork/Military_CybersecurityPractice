@@ -1,0 +1,63 @@
+Cryptography basics use basic ciphers that can be divided into two
+different forums.
+
+- Simple
+- Extremely Complex <- More used compared to simple ciphers
+
+Cryptography = Ensure safety and confidentiality for two parties
+that wish to communicate without being understood by a different party.
+
+Ex) Enigma Machine : A type of cipher used during WWII as a way of sending coded messages where it can only be decoded through the use of an actual password for the machines encrypted message sender.
+
+3DES, AES, RSA are all types of keys that are used to sent cryptic messages.
+
+==================================================================================
+
+Python program that uses Caesar Cipher
+
+BE SURE TO DRINK YOUR OVALTINE
+
+THE ONLY THING WE HAVE TO FEAR IS FEAR ITSELF
+
+MR WATSON COME HERE I WANT YOU
+
+==================================================================================
+
+Cryptographic algorithms
+
+(Symmetric and Asymmetric)
+
+Using secret key or shared secret.
+
+[Issues]
+
+Symmetric key encryption does not scale well.
+
+Find users in your computer using cat /etc/passwd
+
+
+Sending password function:
+
+First
+
+base64 keyfromjohn.key > keyforjohn.send: Encrypts the key in base64 
+
+cat keyforjohn.send|mail -s "For John" john: Send the key to John with the title For John.
+
+su -john: changes the user to a different person!
+
+mail: reads out all the mails that John recieved!
+
+echo "<Whole script>" > keyforjohn.base64: Saves the sent mail as a base64 decryptable key.
+
+base64 -d keyforjohn.base64 > keyfromcybrary.key: Decodes the key to be usable!
+
+echo "<message>" > message.base64: Sends the message into a base64 file
+
+base64 -d message.base64 > message.enc: Decodes the file in base64 format!
+
+openssl pkeyutl -decrypt -inkey keyforjohn.key -in message.enc -out message.txt: Basically the full decrypting!
+
+
+
+
